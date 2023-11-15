@@ -88,7 +88,3 @@ necesare, apoi se elibereaza memoria si se inchid fisierele
 Daca se rezolva cerinta 2, am citit factorul, am creat arborele de
 compresie si am scris toate informatiile necesare, parcurgand
 arborele pe nivele. Apoi am eliberat memoria si am inchis fisierele.
-
-Mentionez ca nu am reusit sa rezolv cerinta 3.
-
-Tema 2 mi s-a parut interesanta si utila.
