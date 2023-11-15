@@ -1,0 +1,46 @@
+Pentru a rezolva problema am declarat mai intai lungimea randului cu
+instructiunea citita din fisier. Am definit structura "Node" care
+presupune un nod din banda noastra, apoi structura "Banda" pentru
+banda.
+Urmeaza structura pentru Stiva, "nodCoada" care presupune un nod din
+coada noastra si structura "Coada" ce defineste coada in sine.
+
+Dupa aceea am definit functia "creeaza_nod" care creaza un nod pentru
+Banda si care primeste ca parametru caracterul care va fi inserat in
+valoarea nodului. Functia "creeaza_banda" creeaza banda noastra, nodul
+santinela si primul nod cu valoarea '#'.
+
+Am implementat functii pentru fiecare operatie specificata din cerinta.
+show - functia pentru instructiunea SHOW, move_left functia pentru
+instructiunea MOVE_LEFT si asa mai departe.
+
+Dupa aceste functii dedicate operatiilor pentru banda, urmeaza functiile
+pentru Stiva. Functia "nodnouStiva" creeaza un nod pentru stiva. Apoi
+urmeaza functiile "isEmptyStack" (care verifica daca stiva este goala),
+"pushStack" (adauga un nou nod la Stiva), "popStack" (elimina ultimul
+element din stiva), "peekStack" (returneaza ultimul element din stiva 
+fara sa il elimine).
+
+Urmeaza functiile pentru coada. "isEmptyQueue" (verifica daca stiva este 
+goala), "enqueue" (adauga un element in coada), "dequeue" (elimina ultimul
+element adaugat in coada), peekQueue (care returneaza ultimul element din
+coada, fara sa il elimine).
+
+Urmeaza functiile "freeBand", "freeStack", "freeQueue" (care sunt folosite
+pentru a elibera memoria din fiecare structura de date).
+
+Urmeaza functia "execute" care executa operatiile din banda, apeland
+functiile reprezentate de fiecare instructiune gasita. Dupa ce s-a executat
+o operatie, aceasta este scoasa din coada.
+
+Functiile "undo" si "redo" sunt folosite pentru instructiunile cu
+aceleasi nume.
+
+In main am verificat existenta fiecarei instructiuni folosind
+instructiunea "if" si functia "strncmp", iar dupa ce a fost gasita,
+in functie de tipul ei, a fost adaugata in coada sau intr-o stiva.
+Am folosit succesiunea de instructiuni if - else if pentru a evita
+sa se identifice subsirul MOVE_RIGHT in MOVE_RIGHT_CHAR etc.
+
+Punctajul oferit de checker-ul local este 100.0/100 pentru teste,
+README si coding style si 20/20 pentru valgrind.
